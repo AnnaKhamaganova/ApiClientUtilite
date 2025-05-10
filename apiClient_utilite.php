@@ -6,13 +6,6 @@ interface ApiClientInterface {
     public function deleteSource(int $id): string;
 }
 
-class UserInput {
-    public function getInput(string $prompt): string {
-        echo $prompt;
-        return trim(fgets(STDIN)); 
-    }
-}
-
 class ApiClient implements ApiClientInterface {
     private string $url;
 
@@ -132,7 +125,6 @@ class ApiClient implements ApiClientInterface {
 }
 
 $apiUrl = "http://6d21d1646ba0.vps.myjino.ru/api/sources";
-$userInput = new UserInput();
 $apiClient = new ApiClient($apiUrl);
 
 if ($argc < 2) {
