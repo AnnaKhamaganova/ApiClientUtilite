@@ -118,9 +118,9 @@ class ApiClient implements ApiClientInterface {
     public function help() {
         echo "Использование: php script.php <команда> [аргументы]\n";
         echo "Доступные команды:\n";
-        echo ' - get <page>'. " - команда для получения списка ресурсов;\n";
-        echo ' - post <name> <description> <url> <attr1> <attr2>'. " - метод для добавления нового ресурса;\n";
-        echo ' - delete <id>'. " - метод для удаления существующего ресурса по id;\n";
+        echo ' - get <page>'. " - команда для получения списка ресурсов на указанной странице;\n";
+        echo ' - post <name> <description> <url> <attr1> <attr2>'. " - команда для добавления нового ресурса;\n";
+        echo ' - delete <id>'. " - команда для удаления существующего ресурса по id;\n";
     }
 }
 
