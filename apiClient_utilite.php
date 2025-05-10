@@ -167,6 +167,8 @@ try {
             break;
 
         case 'help':
+            $apiClient->help();
+            
         default:
             $apiClient->help();
     }
